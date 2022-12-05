@@ -6,7 +6,7 @@
   --cloud: #f4f4fd;
   --cornflower: #e7e9fc;
   --white: #ffffff;
-  --button-primary: #404BBF;
+  --button-primary: #404bbf;
 }
 
 body {
@@ -18,47 +18,87 @@ body {
 }
 
 /* General classes --------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.section-title {
+/* H3 Titles */
+.section-title
+{
   color: var(--navy-blue);
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
 }
-.section-text {
-  color: var(--slate);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-.visually-hidden {	
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0;
-	padding: 0;
-	clip: rect(0 0 0 0);
-	overflow: hidden;
-	}
-
-.second-title {
+.second-title,
+.third-title {
   font-weight: 600;
   font-size: 36px;
   line-height: 1.1;
   text-align: center;
-  letter-spacing: 0.02em
-} 
+  letter-spacing: 0.02em;
+}
+.third-title {
+  padding-bottom: 72px;
+}
+
+/* .section-text, */
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .link {
   text-decoration: none;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* ------------------------------------------- */
 
+/* container for header */
+.conteiner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1128px;
+  outline: 2px solid tomato;
+}
+
 /* css header -------------------------------*/
+.page-header {
+  background-color: var(--white);
+}
+
 .logo {
   color: var(--iris);
   font-family: Raleway, sans-serif;
@@ -70,9 +110,8 @@ body {
   color: var(--navy-blue);
 }
 
-.list-name {
+.link-header {
   color: var(--navy-blue);
-  text-decoration: none;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
@@ -101,6 +140,8 @@ body {
 /* css footer */
 .page-footer {
   background-color: var(--navy-blue);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .logo-footer {
   color: var(--iris);
@@ -109,31 +150,57 @@ body {
 .logo.second {
   color: var(--cloud);
 }
-.text {
+.footer-text {
   color: var(--cornflower);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
 }
+
 /* --------------------------------------- */
 
-/* Main page - Order section -------------------------------*/
+/* Main page  -------------------------------*/
 .order-section {
+  /* padding: 192px 475px 192px 475px; */
+  padding-top: 192px;
+  padding-bottom: 192px;
   background-color: var(--navy-blue);
+  text-align: center;
 }
 .order-title {
+  margin-bottom: 48px;
   color: var(--white);
   font-weight: 700;
   font-size: 56px;
   line-height: 1;
-  text-align: center;
   letter-spacing: 0.02em;
 }
-.team {
-    background-color: var(--cloud);
+
+.section {
+  margin-top: 120px;
 }
+.second-title {
+  padding-bottom: 72px;
+}
+.third-title {
+  padding-top: 120px;
+}
+
+.team {
+  background-color: var(--cloud);
+}
+.worker-title {
+  padding-top: 32px;
+  padding-bottom: 8px;
+}
+.profesion-text {
+  padding-bottom: 32px;
+}
+ .team {
+  padding-bottom: 120px;
+ }
+ .advantages-text {
+  color: var(--slate);
+ }
 /* ---------------------------------------------------- */
-/* button main page and porfolio */
+/* BUTTONS main page and porfolio */
 .button {
   background-color: black;
   color: white;
@@ -143,13 +210,19 @@ body {
   line-height: 1.2;
   font-family: inherit;
   letter-spacing: 0.04em;
+  border: 1px solid transparent;
 }
 
-/* main button */
+/* MAIN button */
 .button.primary {
+  min-width: 170px;
+  height: 50px;
   background-color: var(--iris);
   color: var(--white);
   border: var(--iris);
+  padding: 16px 32px;
+  gap: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .button.primary:hover,
 .button.primary:focus {
@@ -157,11 +230,13 @@ body {
   color: var(--white);
   cursor: pointer;
 }
-/* porfolio buttons */
+/* PORTFOLIO buttons */
 .button.secondary {
   background-color: var(--cloud);
   color: var(--iris);
   border: var(--cornflower);
+  align-items: center;
+  padding: 8px 16px;
 }
 button.secondary:hover,
 button.secondary:focus {
@@ -169,4 +244,28 @@ button.secondary:focus {
   color: var(--white);
   cursor: pointer;
 }
+
 /* ----------------------------------------------------- */
+
+/* PORTFOLIO PAGE --------------------------------------*/
+.nav-section {
+  margin-top: 96px;
+}
+
+.work-examples-section {
+  margin-top: 72px;
+}
+
+.title-example {
+  padding-top: 32px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+}
+.text-example {
+  color: var(--slate);
+  padding-left: 16px;
+  padding-bottom: 32px;
+}
+
+/* ---------------------------------------------------- */
+
