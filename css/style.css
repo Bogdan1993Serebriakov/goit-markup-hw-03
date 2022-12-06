@@ -17,7 +17,7 @@ body {
   font-size: 16px;
 }
 
-/* General classes --------------------------*/
+/*  GENERAL GENERAL GENERAL GENERAL GENERAL GENERAL GENERAL GENERAL---*/
 h1,
 h2,
 h3,
@@ -35,8 +35,7 @@ p {
 }
 /* H3 Titles */
 
-.second-title,
-.third-title {
+.title {
   font-weight: 600;
   font-size: 36px;
   line-height: 1.1;
@@ -47,7 +46,6 @@ p {
   padding-bottom: 72px;
 }
 
-/* .section-text, */
 .text {
   font-weight: 400;
   font-size: 16px;
@@ -89,7 +87,7 @@ img {
   letter-spacing: 0.04em;
   border: 1px solid transparent;
 }
-/* ------------------------------------------- */
+/*  GENERAL GENERAL GENERAL GENERAL GENERAL GENERAL GENERAL GENERAL---*/
 
 /* container for header */
 .conteiner {
@@ -98,7 +96,7 @@ img {
   width: 1152px;
   padding-left: 12px;
   padding-right: 12px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /*  TOP LINE TOP LINE TOP LINE TOP LINE TOP LINE TOP LINE */
@@ -243,7 +241,7 @@ img {
 /* <!--What are we doing What are we doing What are we doing What are we doing What are we doing--> */
 
 /* <!--OUR TEAM OUR TEAM OUR TEAM OUR TEAM OUR TEAM OUR TEAM OUR TEAM OUR TEAM--> */
-.team-list {
+.section-team {
   background-color: var(--cloud);
 }
 
