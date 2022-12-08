@@ -17,7 +17,7 @@ body {
   font-size: 16px;
 }
 
-/*  GENERAL GENERAL GENERAL GENERAL GENERAL GENERAL GENERAL GENERAL---*/
+/*  GENERAL ---*/
 h1,
 h2,
 h3,
@@ -87,25 +87,33 @@ img {
   letter-spacing: 0.04em;
   border: 1px solid transparent;
 }
-/*  GENERAL GENERAL GENERAL GENERAL GENERAL GENERAL GENERAL GENERAL---*/
+/*  GENERAL ---*/
 
 /* container for header */
 .conteiner {
   margin-left: auto;
   margin-right: auto;
-  width: 1152px;
+  width: 1158px;
   padding-left: 12px;
   padding-right: 12px;
   /* outline: 2px solid tomato; */
 }
 
-/*  TOP LINE TOP LINE TOP LINE TOP LINE TOP LINE TOP LINE */
+/*  TOP LINE  */
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  margin-right: 77px;
+}
+
 .main-nav {
   display: flex;
   align-items: center;
 }
 .site-nav {
   display: flex;
+  margin-left: 77px;
 }
 .site-nav .item:not(:last-child) {
   margin-right: 40px;
@@ -117,7 +125,6 @@ img {
   padding-top: 24px;
 }
 .logo-link {
-  margin-right: 77px;
   color: var(--iris);
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -160,23 +167,24 @@ img {
   margin-left: 40px;
 }
 
-/* TOP LINE TOP LINE TOP LINE TOP LINE TOP LINE TOP LINE TOP LINE  */
+/* TOP LINE TOP   */
 
-/* ORDER SECTION  ORDER SECTION ORDER SECTION ORDER SECTION ORDER SECTION ORDER SECTION ORDER SECTION*/
+/* ORDER SECTION  */
 .order-section {
-  /* padding: 192px 475px 192px 475px; */
   padding-top: 192px;
   padding-bottom: 192px;
   background-color: var(--navy-blue);
   text-align: center;
 }
 .order-title {
+  margin: 0 auto;
   margin-bottom: 48px;
   color: var(--white);
   font-weight: 700;
   font-size: 56px;
   line-height: 1;
   letter-spacing: 0.02em;
+  width: 496px;
 }
 /* button order service */
 .button.primary {
@@ -184,9 +192,8 @@ img {
   height: 50px;
   background-color: var(--iris);
   color: var(--white);
-  border: var(--iris);
+  border: none;
   padding: 16px 32px;
-  gap: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .button.primary:hover,
@@ -196,22 +203,22 @@ img {
   cursor: pointer;
 }
 
-/* ORDER SECTION  ORDER SECTION ORDER SECTION ORDER SECTION ORDER SECTION ORDER SECTION ORDER SECTION*/
+/*ORDER SECTION*/
 
-/* <!--OUR ADVANTAGES OUR ADVANTAGES OUR ADVANTAGES OUR ADVANTAGES OUR ADVANTAGES OUR ADVANTAGES OUR ADVANTAGES --> */
+/*OUR ADVANTAGES*/
 
 .feature-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 24px;
 }
 .feature-list .item {
   width: 264px;
 }
 
 .advantages-section {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .advantages-title {
@@ -221,15 +228,16 @@ img {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  text-align: left;
 }
 
 .advantages-text {
   color: var(--slate);
 }
 
-/* <!--OUR ADVANTAGES OUR ADVANTAGES OUR ADVANTAGES OUR ADVANTAGES OUR ADVANTAGES OUR ADVANTAGES OUR ADVANTAGES --> */
+/* OUR ADVANTAGES*/
 
-/* <!--What are we doing What are we doing What are we doing What are we doing What are we doing--> */
+/*What are we doing*/
 .doing-title {
   padding-bottom: 72px;
   text-align: center;
@@ -238,9 +246,9 @@ img {
   display: flex;
   justify-content: space-between;
 }
-/* <!--What are we doing What are we doing What are we doing What are we doing What are we doing--> */
+/*What are we doing*/
 
-/* <!--OUR TEAM OUR TEAM OUR TEAM OUR TEAM OUR TEAM OUR TEAM OUR TEAM OUR TEAM--> */
+/*OUR TEAM*/
 .section-team {
   background-color: var(--cloud);
 }
@@ -280,12 +288,12 @@ img {
   padding-bottom: 120px;
 }
 
-/* <!--OUR TEAM OUR TEAM OUR TEAM OUR TEAM OUR TEAM OUR TEAM OUR TEAM OUR TEAM--> */
+/*OUR TEAM*/
 
-/* ----------------------------------------------------- */
+/* ----------------------------------------*/
 
-/* PORTFOLIO PAGE ---------------------------------------------------*/
-/* BUTTON PORFOLIO BUTTON PORFOLIO BUTTON PORFOLIO BUTTON PORFOLIO  */
+/* PORTFOLIO PAGE*/
+/* BUTTON PORFOLIO*/
 .btn-porfolio-conteiner {
   width: 586px;
   height: 50px;
@@ -354,7 +362,7 @@ img {
 
 /* ---------------------------------------------------- */
 
-/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
+/* FOOTER*/
 
 .footer-conteiner {
   display: flex;
@@ -382,4 +390,4 @@ img {
   margin-top: 16px;
 }
 
-/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
+/* FOOTER*/
